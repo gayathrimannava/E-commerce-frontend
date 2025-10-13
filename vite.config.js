@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: process.env.VITE_PORT || 10000,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    allowedHosts:['*.onrender.com']
   }
 });
 
