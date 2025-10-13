@@ -3,7 +3,7 @@
 // function ProductList({ onAddToCart }) {
 //   const [products, setProducts] = useState([]);
 //   const [loading, setLoading] = useState(true);
-//   const API_ROOT = "http://127.0.0.1:8000/api/products/";
+//   const API_ROOT = "https://fsd-python-rpbq.onrender.com/api/products/";
 
 //   useEffect(() => {
 //     const fetchProducts = async () => {
@@ -71,7 +71,7 @@ export default function ProductList() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/products/", config)
+      .get("https://fsd-python-rpbq.onrender.com/api/products/", config)
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("Fetch error:", err.response?.data))
       .finally(() => setLoading(false));

@@ -10,7 +10,7 @@ function Main() {
 
   // Fetch cart items from backend
   const fetchCartItems = () => {
-    fetch(`http://127.0.0.1:8000/api/cart/${username}/`)
+    fetch(`https://fsd-python-rpbq.onrender.com/api/cart/${username}/`)
       .then(res => res.json())
       .then(data => setCart(data))
       .catch(err => console.error(err));
@@ -18,7 +18,7 @@ function Main() {
 
   // Add product to cart
   const addToCart = (product) => {
-    fetch("http://127.0.0.1:8000/api/cart/add/", {
+    fetch("https://fsd-python-rpbq.onrender.com/api/cart/add/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, product_id: product.id, quantity: 1 }),

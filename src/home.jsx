@@ -10,7 +10,7 @@
 
 //   const login = async () => {
 //     try {
-//       const response = await axios.post("http://127.0.0.1:8000/api/token/", {
+//       const response = await axios.post("https://fsd-python-rpbq.onrender.com/api/token/", {
 //         username,
 //         password,
 //       });
@@ -81,7 +81,7 @@
 
 //   const getProducts = async () => {
 //     try {
-//       const response = await axios.get("http://127.0.0.1:8000/api/products/", {
+//       const response = await axios.get("https://fsd-python-rpbq.onrender.com/api/products/", {
 //         headers: {
 //           Authorization: `Bearer ${token}`,
 //         },

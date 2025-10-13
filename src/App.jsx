@@ -15,7 +15,7 @@
 
 //   // Fetch products from backend
 //   const fetchProducts = () => {
-//     fetch("http://127.0.0.1:8000/api/products/")
+//     fetch("https://fsd-python-rpbq.onrender.com/api/products/")
 //       .then((res) => res.json())
 //       .then((data) => setProducts(data))
 //       .catch((err) => console.error("Error fetching products:", err));
@@ -82,7 +82,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/products/", {
+      const response = await axios.get("https://fsd-python-rpbq.onrender.com/api/products/", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts(response.data);

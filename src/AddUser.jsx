@@ -28,7 +28,7 @@ export default function AddUser() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    axios.post("http://127.0.0.1:8000/api/users/", { username, email })
+    axios.post("https://fsd-python-rpbq.onrender.com/api/users/", { username, email })
       .then(res => navigate("/"))
       .catch(err => console.error(err));
   };

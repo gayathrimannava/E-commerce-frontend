@@ -9,7 +9,7 @@
 
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
-//     fetch("http://127.0.0.1:8000/api/products/", {
+//     fetch("https://fsd-python-rpbq.onrender.com/api/products/", {
 //       method: "POST",
 //       headers: { "Content-Type": "application/json" },
 //       body: JSON.stringify({ name, price, description }),
@@ -86,7 +86,7 @@ export default function AddProduct() {
     if (!productId) return;
     setLoading(true);
     axios
-      .get(`http://127.0.0.1:8000/api/products/${productId}`, baseConfig)
+      .get(`https://fsd-python-rpbq.onrender.com/api/products/${productId}`, baseConfig)
       .then((res) => {
         setName(res.data.name);
         setPrice(res.data.price);
@@ -110,8 +110,8 @@ export default function AddProduct() {
   }
   const data = { name, price: parseFloat(price), description };
   const request = productId
-    ? axios.put(`http://127.0.0.1:8000/api/product/`, {...data,id:productId}, baseConfig)
-    : axios.post("http://127.0.0.1:8000/api/product/", data, baseConfig);
+    ? axios.put(`https://fsd-python-rpbq.onrender.com/api/product/`, {...data,id:productId}, baseConfig)
+    : axios.post("https://fsd-python-rpbq.onrender.com/api/product/", data, baseConfig);
   request
     .then((response) => {
       console.log("Response type:", Array.isArray(response.data) ? "Array (list)" : "Object (single product)");

@@ -73,7 +73,7 @@ export function AuthProvider({ children }) {
       };
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/token/",
+        "https://fsd-python-rpbq.onrender.com/api/token/",
         { username, password },
         config
       );

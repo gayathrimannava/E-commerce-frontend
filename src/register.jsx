@@ -7,7 +7,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const API_ROOT = "http://127.0.0.1:8000/api";
+  const API_ROOT = "https://fsd-python-rpbq.onrender.com/api";
 
   const handleRegister = async () => {
     setLoading(true);
@@ -41,7 +41,7 @@ function Register() {
 
   const handleGoogleRegister = () => {
     alert("Google register not yet connected to backend!");
-    // Example: window.location.href = "http://127.0.0.1:8000/api/auth/google/";
+    // Example: window.location.href = "https://fsd-python-rpbq.onrender.com/api/auth/google/";
   };
 
   return (

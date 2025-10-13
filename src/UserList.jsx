@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function UserList() {
   const [users, setUsers] = useState([]);
-  const API_ROOT = "http://127.0.0.1:8000/api";
+  const API_ROOT = "https://fsd-python-rpbq.onrender.com/api";
 
   useEffect(() => {
     fetch(`${API_ROOT}/users/`)
