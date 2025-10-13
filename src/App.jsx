@@ -63,9 +63,9 @@
 
 import React, { useState, useEffect, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
+import Sidebar from "./components/sidebar";
+import Footer from "./components/footer";
 import PrivateRoute from "./components/PrivateRoute"; // import PrivateRoute
 import Login from "./login";
 import Register from "./register";
