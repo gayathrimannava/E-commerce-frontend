@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     port: process.env.VITE_PORT || 10000,
     host: '0.0.0.0',
-    allowedHosts:['*.onrender.com']
+    allowedHosts:['.onrender.com']
   }
 });
 
